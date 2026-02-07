@@ -41,7 +41,7 @@ services:
       - CLICKHOUSE_PASSWORD=${CLICKHOUSE_PASSWORD:-password}
       
       # Discord Bot Configuration
-      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+      - DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1469793699998339253/JaLg3dlGiqNDAbPxueijTPpiwFs0vjLulZ8RscunxAL4nUpDag0593rPKVbrPDscbFkz
       - DISCORD_THREAD_ID=${DISCORD_THREAD_ID:-}
       - MESH_REGION=${MESH_REGION:-Louisiana}
       - POLL_INTERVAL=${POLL_INTERVAL:-1000}
