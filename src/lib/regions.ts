@@ -7,22 +7,10 @@ export interface RegionConfig {
 
 export const REGIONS: RegionConfig[] = [
   {
-    name: "seattle",
-    friendlyName: "Seattle (PugetMesh, SalishMesh)",
-    broker: "tcp://mqtt.davekeogh.com:1883",
+    name: "Louisiana",
+    friendlyName: "Louisiana Mesh Community",
+    broker: "tcp://mqtt.louisianamesh.org:1883",
     topics: ["meshcore", "meshcore/salish"]
-  },
-  {
-    name: "portland",
-    friendlyName: "Portland",
-    broker: "tcp://mqtt.davekeogh.com:1883",
-    topics: ["meshcore/pdx"]
-  },
-  {
-    name: "boston",
-    friendlyName: "Boston",
-    broker: "tcp://mqtt.davekeogh.com:1883",
-    topics: ["meshcore/bos"]
   }
 ];
 
