@@ -4,7 +4,7 @@
  * Discord Bot for MeshCore Chat Messages
  * 
  * This script subscribes to the ClickHouse message stream with decryption enabled
- * for the Seattle region and posts new messages to Discord via webhook.
+ * for the Louisiana region and posts new messages to Discord via webhook.
  * 
  * Messages with the same ID will update the existing Discord message instead of
  * posting a new one.
@@ -135,7 +135,7 @@ async function main() {
   // Get configuration from environment variables
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
   const threadId = process.env.DISCORD_THREAD_ID;
-  const region = process.env.MESH_REGION || 'seattle';
+  const region = process.env.MESH_REGION || 'Louisiana';
   const pollInterval = parseInt(process.env.POLL_INTERVAL || '1000', 10);
   const maxRowsPerPoll = parseInt(process.env.MAX_ROWS_PER_POLL || '50', 10);
   const privateKeys = process.env.PRIVATE_KEYS ? process.env.PRIVATE_KEYS.split(',').filter(key => key.trim()) : [];
@@ -153,7 +153,7 @@ async function main() {
   }
 
   // Validate region
-  const allowedRegions = ['seattle', 'portland', 'boston'];
+  const allowedRegions = ['Louisiana'];
   if (!allowedRegions.includes(region)) {
     console.error(`Error: MESH_REGION must be one of: ${allowedRegions.join(', ')}`);
     process.exit(1);

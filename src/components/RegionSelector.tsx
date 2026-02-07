@@ -36,8 +36,8 @@ export default function RegionSelector({ onRegionSelected, className = "" }: Reg
           >
             <div className="font-medium text-gray-800 dark:text-gray-100">{friendlyName}</div>
             <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              {name === "seattle" &&
-                "Broker: mqtt.davekeogh.com, Base topics: meshcore, meshcore/salish"}
+              {name === "Louisiana" &&
+                "Broker: mqtt.louisianamesh.org, Base topics: meshcore, meshcore/MSY"}
               {name === "portland" && "Broker: mqtt.davekeogh.com, Base topic: meshcore/pdx"}
               {name === "boston" && "Broker: mqtt.davekeogh.com, Base topic: meshcore/bos"}
             </div>
